@@ -25,7 +25,7 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
-
+//
 //
 
 import UIKit
@@ -34,7 +34,7 @@ public class ScrollPageView: UIView {
     static let cellId = "cellId"
     public var segmentStyle = SegmentStyle()
     /// 附加按钮点击响应
-    public var extraBtnOnClick: ((extraBtn: UIButton) -> Void)? {
+    public var extraBtnOnClick: ((_ extraBtn: UIButton) -> Void)? {
         didSet {
             segView.extraBtnOnClick = extraBtnOnClick
         }

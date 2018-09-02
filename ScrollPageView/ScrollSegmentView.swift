@@ -25,7 +25,7 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
-
+//
 //
 
 import UIKit
@@ -39,9 +39,9 @@ public class ScrollSegmentView: UIView {
     public var segmentStyle: SegmentStyle
     
     /// 点击响应的closure
-    public var titleBtnOnClick:((label: UILabel, index: Int) -> Void)?
+    public var titleBtnOnClick:((label: UILabel, _ index: Int) -> Void)?
     /// 附加按钮点击响应
-    public var extraBtnOnClick: ((extraBtn: UIButton) -> Void)?
+    public var extraBtnOnClick: ((_ extraBtn: UIButton) -> Void)?
     /// self.bounds.size.width
     private var currentWidth: CGFloat = 0
     /// 遮盖x和文字x的间隙
